@@ -14,11 +14,12 @@ return new class extends Migration
         Schema::create('portfolios', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('title_description')->nullable();
             $table->string('description')->nullable();
             $table->string('type');
             $table->string('image')->nullable();
-            $table->string('link')->nullable();
+            $table->string('git_link')->nullable();
+            $table->string('site_link')->nullable();
+            $table->string('delivery')->nullable();
             $table->timestamps();
         });
     }

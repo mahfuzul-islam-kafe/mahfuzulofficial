@@ -13,5 +13,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::group(['controller' => PagesController::class, 'as' => 'page.'], function () {
     Route::get('/', 'index')->name('home');
-
 });

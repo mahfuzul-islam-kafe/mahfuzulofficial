@@ -12,7 +12,6 @@ return new class extends Migration {
     {
         Schema::create('resumes', function (Blueprint $table) {
             $table->id();
-            $table->text('title_description');
             $table->string('title');
             $table->string('sub_title');
             $table->longText('description');
